@@ -1,4 +1,4 @@
-package Diagramas;
+package diagramas;
 
 import java.util.Scanner;
 
