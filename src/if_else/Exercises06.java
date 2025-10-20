@@ -36,7 +36,7 @@ public class Exercises06 {
 
 		} else {
 			System.out.println("La suma de dos de los números introducidos no da como resultado el otro.");
-		}
+		}//Close if
 
 		sc.close();
 	}
