@@ -59,7 +59,7 @@ public class Exercise03 {
 			System.out.println("El DNI introducido no puede contener ni más ni menos de 8 cifras.");
 		}
 		
-		sc.next();
+		sc.close();
 	}
 
 }
