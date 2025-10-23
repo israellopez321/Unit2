@@ -43,7 +43,6 @@ public class Exercise05 {
 			} else {
 				precioBillete = distancia * PRECIO_KM;
 			}
-			
 			System.out.println("El precio del billete de tren cuesta: " + precioBillete + " euros.");	
 		} else {
 			System.out.println("El número de días de estancia y distancia no pueden ser negativos.");
