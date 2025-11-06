@@ -52,7 +52,6 @@ public static void main(String[] args) {
 			sumaDados = dado1 + dado2;
 
 			// Show the final message 
-			
 			System.out.println("Has sacado un " + sumaDados);	
 			
 			

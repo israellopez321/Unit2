@@ -8,41 +8,43 @@ public class Exercise04 {
 		Scanner sc = new Scanner(System.in);
 
 		// Declaration a variables for contain the result of dice rolls
-		int dado1;
-		int dado2;
-
+		String tirada1;
+		String tirada2;
+		int dado1 = 0;
+		int dado2 = 0;
+		
 		// Declaration a variable for contain the addition of the rolls
 		int sumaDados;
 
 		// Ask the user for the number of first roll
 		System.out.println("Introduzca el valor del primer dado lanzado:");
-		dado1 = sc.nextInt();
+		tirada1 = sc.next();
 
 		// Use switch for show result according the result of first dice rolls
-		switch (dado1) {
-		case 1 -> System.out.println("UNO");
-		case 2 -> System.out.println("DOS");
-		case 3 -> System.out.println("TRES");
-		case 4 -> System.out.println("CUATRO");
-		case 5 -> System.out.println("CINCO");
-		case 6 -> System.out.println("SEIS");
+		switch (tirada1) {
+		case "UNO" -> dado1 = 1;
+		case "DOS" -> dado1 = 2;
+		case "TRES" -> dado1 = 3;
+		case "CUATRO" -> dado1 = 4;
+		case "CINCO" -> dado1 = 5;
+		case "SEIS" -> dado1 = 6;
 		default -> System.out.println("El valor del dado es imposible.");
 		}
 
 		// Ask the user for the number of second roll
 		System.out.println();
 		System.out.println("Introduzca el valor del segundo dado lanzado:");
-		dado2 = sc.nextInt();
+		tirada2 = sc.next();
 		System.out.println();
 
 		// Use switch for show result according the result of second dice rolls
-		switch (dado2) {
-		case 1 -> System.out.println("UNO");
-		case 2 -> System.out.println("DOS");
-		case 3 -> System.out.println("TRES");
-		case 4 -> System.out.println("CUATRO");
-		case 5 -> System.out.println("CINCO");
-		case 6 -> System.out.println("SEIS");
+		switch (tirada2) {
+		case "UNO" -> dado2 = 1;
+		case "DOS" -> dado2 = 2;
+		case "TRES" -> dado2 = 3;
+		case "CUATRO" -> dado2 = 4;
+		case "CINCO" -> dado2 = 5;
+		case "SEIS" -> dado2 = 6;
 		default -> System.out.println("El valor del dado es imposible.");
 		}
 
