@@ -28,7 +28,6 @@ public static void main(String[] args) {
 			case 4 -> System.out.println("CUATRO");
 			case 5 -> System.out.println("CINCO");
 			case 6 -> System.out.println("SEIS");
-			default -> System.out.println("El valor del dado es imposible.");
 			}
 
 			//use "do while" for repeat the question the user for second roll
@@ -47,7 +46,6 @@ public static void main(String[] args) {
 			case 4 -> System.out.println("CUATRO");
 			case 5 -> System.out.println("CINCO");
 			case 6 -> System.out.println("SEIS");
-			default -> System.out.println("El valor del dado es imposible.");
 			}
 
 			// Calculate the addition of rolls
