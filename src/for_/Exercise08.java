@@ -34,10 +34,10 @@ public class Exercise08 {
 				}//Fin if
 			} // Fin for			
 		} else if (numA < numB) {
-			for (int cont = numA; cont <= numB; cont++) {
+			for (int cont = numB; cont >= numA; cont--) {
 				if (cont != numA && cont != numB) {
 					System.out.print(cont);
-					if (cont != numB-1) {
+					if (cont != numA+1) {
 						System.out.print(", ");
 					} else {
 						System.out.print(".");
