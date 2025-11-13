@@ -47,6 +47,7 @@ public class Exercise08Correction {
 				} // Fin else
 			} // Fin if
 		}//Fin for
+		
 		// Cerramos el escaner
 		sc.close();
 	}
