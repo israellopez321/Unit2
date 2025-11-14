@@ -14,6 +14,8 @@ public class Exercise01 {
 				
 				//Declaramos una variable para contener la cantidad de segundos a incrementar
 				int incrementoseg;
+				
+				//
 
 				// Le preguntamos al usuario sobre la hora
 				System.out.println("Introduzca las horas:");
@@ -32,11 +34,37 @@ public class Exercise01 {
 				incrementoseg = sc.nextInt();
 				
 				// Comprobamos que pasaria si pasara x segundos
+				for(int i = 1; i<= incrementoseg; i++) {
+					seg++;
+					
+					if(seg == 60) {
+						seg = 0;
+						min++;
+						if(min == 60) {
+							min = 0;
+							horas++;
+							if (horas == 24) {
+								horas = 0;
+							}
+						}
+					}
+				}
 				
+				if (horas<10) {
+					System.out.print("0");
+				}
+				System.out.print(horas + ":");
 				
-				// Imprimos al usuario la hora trascurrido un segundo
-				System.out.println("Pasado un segundo son las " + horas + ":" + min + ":" + seg);
-
+				if (min < 10) {
+					System.out.print("0");
+				}
+				System.out.print(min + ":");
+				
+				if (seg < 10) {
+					System.out.print("0");
+				}
+				System.out.print(seg);
+				
 				sc.close();
 	}
 }
