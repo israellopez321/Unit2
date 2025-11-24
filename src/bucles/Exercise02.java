@@ -26,7 +26,6 @@ public class Exercise02 {
 			if (cont%2 == 0 || cont%3 == 0 || cont%5== 0) {
 				contadorPrimos += 1;
 				}
-			
 		}
 		
 		// Le mostramos al usuario el resultado
