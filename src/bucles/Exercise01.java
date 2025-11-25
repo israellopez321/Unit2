@@ -14,8 +14,6 @@ public class Exercise01 {
 				
 				//Declaramos una variable para contener la cantidad de segundos a incrementar
 				int incrementoseg;
-				
-				//
 
 				// Le preguntamos al usuario sobre la hora
 				System.out.println("Introduzca las horas:");
