@@ -13,10 +13,12 @@ public class Exercise07 {
 		// Declaramos una variable para contener un booleano en caso de que sea primo el numero sera true
 		boolean esPrimo = true;
 
-		// Le pedimos al usuario introducir un numero
+		// Le pedimos al usuario introducir un numero con un do para que no añadan numero negativos
+		do {
 		System.out.println("Introduzca un número entero y positivo para saber si es primo:");
 		num = sc.nextInt();
-
+		} while (num < 0);
+		
 		// Usamos if para comprobar de que el numero no sea 1
 		if (num == 1) {
 			esPrimo = false;
@@ -25,7 +27,7 @@ public class Exercise07 {
 		// Utilizamos for para comprobar si el numero es primo
 		for (int cont = 2; cont <= Math.sqrt(num); cont++) {
 
-			if (num % cont == 0 && num != cont) {
+			if (num % cont == 0 ) {
 				esPrimo = false;
 			} // Fin if
 		}

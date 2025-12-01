@@ -1,0 +1,68 @@
+package bucles;
+
+import java.util.Scanner;
+
+public class Exercise01 {
+	public static void main(String[] args) {
+		// Creamos un nuevo escaner
+				Scanner sc = new Scanner(System.in);
+
+				// Declaramos las variables para contener las horas, min y segundos
+				int horas;
+				int min;
+				int seg;
+				
+				//Declaramos una variable para contener la cantidad de segundos a incrementar
+				int incrementoseg;
+
+				// Le preguntamos al usuario sobre la hora
+				System.out.println("Introduzca las horas:");
+				horas = sc.nextInt();
+
+				// Le preguntamos al usuario sobre la min
+				System.out.println("Introduzca las minutos:");
+				min = sc.nextInt();
+
+				// Le preguntamos al usuario sobre la seg
+				System.out.println("Introduzca las segundos:");
+				seg = sc.nextInt();
+				
+				//Le preguntamos al usuario por los segundos a incrementar
+				System.out.println("Cuántos segundos quieres incrementarlo:");
+				incrementoseg = sc.nextInt();
+				
+				// Comprobamos que pasaria si pasara x segundos
+				for(int i = 1; i<= incrementoseg; i++) {
+					seg++;
+					
+					if(seg == 60) {
+						seg = 0;
+						min++;
+						if(min == 60) {
+							min = 0;
+							horas++;
+							if (horas == 24) {
+								horas = 0;
+							}
+						}
+					}
+				}
+				
+				if (horas<10) {
+					System.out.print("0");
+				}
+				System.out.print(horas + ":");
+				
+				if (min < 10) {
+					System.out.print("0");
+				}
+				System.out.print(min + ":");
+				
+				if (seg < 10) {
+					System.out.print("0");
+				}
+				System.out.print(seg);
+				
+				sc.close();
+	}
+}

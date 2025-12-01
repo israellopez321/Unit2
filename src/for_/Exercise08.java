@@ -42,7 +42,7 @@ public class Exercise08 {
 					} else {
 						System.out.print(".");
 					} // Fin else
-				}//Fin if 
+				}//Fin if
 			} // Fin for	
 		}
 
