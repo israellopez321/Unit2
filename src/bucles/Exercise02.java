@@ -21,14 +21,24 @@ public class Exercise02 {
 		num = sc.nextInt();
 		
 		
-		for (int cont = 1; cont <= num ; cont++ ) {
+		for (int cont = 2; cont <= num ; cont++ ) {
+			esPrimo = true;
 			
-			if (cont%2 == 0 || cont%3 == 0 || cont%5== 0) {
-				contadorPrimos += 1;
+			for (int i = 2; i <= Math.sqrt(cont); i++) {
+				if (cont % i == 0) {
+                    esPrimo = false;
 				}
+			}
+			
+			if (esPrimo) {
+				contadorPrimos++;
+			}
 		}
 		
 		// Le mostramos al usuario el resultado
 		System.out.println("Entre el 1 y el " + num + " hay " + contadorPrimos + " números primos.");
+		
+		
+		sc.close();
 	}
 }
